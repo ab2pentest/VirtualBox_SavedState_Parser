@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <string.h>
 
 uint32_t readf(FILE *f)
 {
