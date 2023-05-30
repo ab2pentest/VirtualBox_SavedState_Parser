@@ -1,6 +1,7 @@
 #executables for this proj
 extract_screenshot
 parsevbox
+out*
 
 # Prerequisites
 *.d
