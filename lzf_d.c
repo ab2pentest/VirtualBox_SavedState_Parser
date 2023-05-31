@@ -35,6 +35,7 @@
  */
 
 #include "lzfP.h"
+#include <string.h>
 
 #if AVOID_ERRNO
 # define SET_ERRNO(n)

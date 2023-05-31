@@ -34,6 +34,7 @@
  * either the BSD or the GPL.
  */
 
+#include <string.h>
 #ifndef LZFP_h
 #define LZFP_h
 

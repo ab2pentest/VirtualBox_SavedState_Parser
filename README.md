@@ -35,7 +35,7 @@ gcc extract_screenshot.c -o extract_screenshot
 Once we have compiled both files, we can run the tool by following these steps:
 
 ```bash
-./parsevbox date_savedstateimage.sav
+./parsevbox path/to/name.sav
 ```
 
 The process of running the tool may take several minutes, as it decompresses the `.sav` file and generates additional files that may be useful for forensic analysis.
@@ -49,14 +49,15 @@ Great ! Now that the tool has finished running, we can examine the output files 
 To extract the screenshot from the output, we can follow these steps:
 
 1) Locate the file `*.sav-DisplayScreenshot.out` in the output directory and rename it to `vbox.img-DisplayScreenshot.out`.
-2) Run the `extract_screenshot` tool. This will generate three files: `out.png`, `out.raw`, and `out.ppm`.
-
-These files should contain the screenshot data, which we can view or analyze as needed.
 
 ```bash
 mv *.sav-DisplayScreenshot.out vbox.img-DisplayScreenshot.out
-./extract_screenshot
 ```
+
+2) Run the `extract_screenshot` tool and then enter the path of the directory containing `vbox.img-DisplayScreenshot.out`. This will generate three files, namely `out.png`, `out.raw`, and `out.ppm`, under the same directory.
+
+These files should contain the screenshot data, which we can view or analyze as needed.
+
 
 ![2022-03-26_18-22-49](https://user-images.githubusercontent.com/84577967/160250508-2995723e-c1da-4696-8537-0371ed5166f8.png)
 
