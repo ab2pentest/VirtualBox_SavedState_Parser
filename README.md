@@ -27,7 +27,7 @@ After that we will need to compile it.
 
 ```
 gcc parsevbox.c lzf_d.c -o parsevbox
-gcc -g extract_screenshot.c -o extract_screenshot
+gcc extract_screenshot.c -o extract_screenshot
 ```
 
 ![2022-02-23_01-57-12](https://user-images.githubusercontent.com/84577967/160249355-6a41c043-2ad6-47e8-80d4-9a72fc799ca6.png)
@@ -54,7 +54,7 @@ To extract the screenshot from the output, we can follow these steps:
 mv *.sav-DisplayScreenshot.out vbox.img-DisplayScreenshot.out
 ```
 
-2) Run the `extract_screenshot` tool. This will generate three files: `out.png`, `out.raw`, and `out.ppm`.
+2) Run the `extract_screenshot` tool and then enter the path of the directory containing `vbox.img-DisplayScreenshot.out`. This will generate three files, namely `out.png`, `out.raw`, and `out.ppm`, under the same directory.
 
 These files should contain the screenshot data, which we can view or analyze as needed.
 
